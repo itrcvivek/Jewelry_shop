@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewelry Store Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <div class="top-bar-content">
+          <a href="#" class="logo">LOGO</a>
+          <div class="search-section">
+            <div class="container">
+              <div class="search-container">
+                <select class="category-select">
+                  <option>All Categories</option>
+                </select>
+                <input type="text" class="search-input" placeholder="Search" />
+                <button class="search-button">
+                  <img src="./image/search.png" alt="" srcset="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="support">
+            <div class="support-icon">
+              <img src="./image/Group 2168.png" alt="caller-icon" sizes="" />
+            </div>
+            <div class="support-text">
+              <div class="phone">987 654 3210</div>
+              <div class="support-label">24/7 Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav-section">
+        <div class="nav-container">
+          <button class="mobile-menu">☰</button>
+          <ul class="nav-menu">
+            <li><a href="#">Shop All</a></li>
+            <li><a href="#">Rings</a></li>
+            <li><a href="#">Earrings</a></li>
+            <li><a href="#">Bracelets</a></li>
+            <li><a href="#">Pendents</a></li>
+            <li><a href="#">Bespoke Jewelery</a></li>
+            <li><a href="#">Gifting</a></li>
+            <li><a href="#" class="active">New Arrival</a></li>
+            <li><a href="#">More</a></li>
+          </ul>
+          <div class="user-actions">
+            <a href="#"
+              ><img src="./image/favorite.png" alt="dil" /><span
+                >Wishlist</span
+              ></a
+            >
+            <a href="#"
+              ><img src="./image/shopping_cart.png" alt="dil" /><span
+                >Cart</span
+              ></a
+            >
+            <a href="#"
+              ><img src="./image/face_5.png" alt="dil" /><span>Account</span></a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="container" style="overflow: hidden; margin-top: 20px">
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img src="./image/Group 2167.png" alt="Image 1" />
+          <img src="./image/Group 2166.png" alt="Image 2" />
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="container">
+      <div class="jewelry-grid" id="jewelryGrid"></div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="container">
+      <h2 class="section-title hbjhb">Best at JBA</h2>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="container">
+      <div style="width: 1200px; max-width: 100%">
+        <img
+          src="./image/Frame 192.png"
+          alt="add"
+          style="max-width: 100%; height: auto"
+        />
+      </div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="container">
+      <h2 class="section-title hbjhb">New Arrivals</h2>
+      <div class="product-grid" id="newArrivalsGrid"></div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="container">
+      <!-- Top Banners -->
+      <div class="banner-grid">
+        <div class="banner-card">
+          <img src="./image/Frame 168.png" alt="Bespoke Design Service" />
+          <div class="banner-overlay">
+            <h2 class="banner-title">BESPOKE DESIGN SERVICE</h2>
+            <p class="banner-subtitle">200 + 58</p>
+          </div>
+        </div>
+        <div class="banner-card">
+          <img src="./image/Frame 169.png" alt="Jewelry Gifting" />
+          <div class="banner-overlay turquoise">
+            <h2 class="banner-title">JEWELRY GIFTING</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="container">
+      <div class="diamond-banner" style="margin-bottom: 40px">
+        <div class="diamond-content" style="position: relative">
+          <div>
+            <img
+              style="position: absolute; top: 30px"
+              src="./image/Group 9.png"
+              alt="Diamond"
+              class="diamond-image"
+            />
+          </div>
+          <div style="z-index: 12; position: static">
+            <h2 class="diamond-title">Diamond Collections</h2>
+            <p class="diamond-subtitle">
+              Explore among various shapes and cuts
+            </p>
+          </div>
+          <div><a href="#" class="explore-button">Explore Now</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="container">
+      <h2 class="section-title hbjhb">Recently Viewed</h2>
+      <div class="product-grid" id="recentViewsGrid"></div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="container" style="margin: 20px auto">
+      <div class="features-grid">
+        <div class="feature">
+          <div class="jddj">
+            <img
+              style="width: 48px"
+              src="./image/workspace_premium.png"
+              alt="Certified Jewelry"
+            />
+          </div>
+          <h3>Certified Jewelry</h3>
+        </div>
+        <div class="feature">
+          <div class="jddj">
+            <img
+              style="width: 48px"
+              src="./image/archive.png"
+              alt="Best Design"
+            />
+          </div>
+          <h3>Best Design</h3>
+        </div>
+        <div class="feature">
+          <div class="jddj">
+            <img
+              style="width: 48px"
+              src="./image/draw.png"
+              alt="Bespoke Jewelry"
+            />
+          </div>
+          <h3>Bespoke Jewelry</h3>
+        </div>
+        <div class="feature">
+          <div class="jddj">
+            <img
+              style="width: 48px"
+              src="./image/architecture.png"
+              alt="Easy Return"
+            />
+          </div>
+
+          <h3>Easy Return</h3>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <div class="container">
+      <div class="testimonial-card">
+        <div class="testimonial-left">
+          <img
+            style="width: 80px; margin-bottom: 20px"
+            src="./image/“.png"
+            alt="'"
+            srcset=""
+          />
+          <div>
+            <p class="customer-says">Customer Says</p>
+            <p class="p">Stories of people admired by JBA jewelry</p>
+          </div>
+          <div class="stars ghj">★★★★★</div>
+        </div>
+        <div class="testimonial-right">
+          <div class="quote">
+            <span class="customer-name" style="border-bottom: 2px solid #d66c6c"
+              >Sushil Behera</span
+            >
+            <div class="testimonial-text">
+              I had an amazing time with all your staff. My experience with you
+              and your daughter went over my expectations. The perfect
+              experience exploring highlights with you was an eye opener.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------------------------- -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="social-icons">
+              <a href="#" class="social-icon"
+                ><img src="./image/🦆 icon _facebook_.png"
+              /></a>
+              <a href="#" class="social-icon"
+                ><img src="./image/🦆 icon _twitter_.png"
+              /></a>
+              <a href="#" class="social-icon"
+                ><img src="./image/🦆 icon _linkedin_.png"
+              /></a>
+              <a href="#" class="social-icon"
+                ><img src="./image/🦆 icon _pinterest_.png"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>About Links</h3>
+            <ul>
+              <li><a href="#">The JBA Group</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Policies</h3>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Cancellation & Returns</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Details</h3>
+            <ul>
+              <li><a href="#">Customer Care</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Newsletter</h3>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="newsletter-input"
+                placeholder="Get all inbox mail deals"
+              />
+              <button
+                type="submit"
+                class="newsletter-button"
+                style="color: pink; font-weight: 800"
+              >
+                →
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- -------------------------------------------- -->
+    <script>
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const navMenu = document.querySelector(".nav-menu");
+
+      mobileMenu.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!navMenu.contains(e.target) && !mobileMenu.contains(e.target)) {
+          navMenu.classList.remove("active");
+        }
+      });
+
+      const bestAtJBA = [
+        {
+          title: "Pearl Diamond Ring",
+          code: "SKU:J845783",
+          price: "₹ 3320",
+          rating: 5,
+          image: "./image/Frame 161.png",
+        },
+        {
+          title: "Pearl Diamond Ring",
+          code: "SKU:J845784",
+          price: "₹ 3320",
+          rating: 5,
+          image: "./image/Frame 162.png",
+        },
+        {
+          title: "Pearl Diamond Ring",
+          code: "SKU:J845785",
+          price: "₹ 3320",
+          rating: 5,
+          image: "./image/Frame 163.png",
+        },
+        {
+          title: "Pearl Diamond Ring",
+          code: "SKU:J845786",
+          price: "₹ 3320",
+          rating: 5,
+          image: "./image/Frame 164.png",
+        },
+      ];
+      const newArrivals = [
+        {
+          title: "Emerald Necklace",
+          code: "SKU:N985632",
+          price: "₹ 5520",
+          rating: 4,
+          image: "./image/Frame 161.png",
+        },
+        {
+          title: "Sapphire Bracelet",
+          code: "SKU:B129884",
+          price: "₹ 4200",
+          rating: 5,
+          image: "./image/Frame 162.png",
+        },
+        {
+          title: "Emerald Necklace",
+          code: "SKU:N985658",
+          price: "₹ 5520",
+          rating: 4,
+          image: "./image/Frame 163.png",
+        },
+        {
+          title: "Sapphire Bracelet",
+          code: "SKU:B129842",
+          price: "₹ 4200",
+          rating: 5,
+          image: "./image/Frame 164.png",
+        },
+      ];
+      const recentViews = [
+        {
+          title: "Emerald Necklace",
+          code: "SKU:N985632",
+          price: "₹ 5520",
+          rating: 4,
+          image: "./image/Frame 161.png",
+        },
+        {
+          title: "Sapphire Bracelet",
+          code: "SKU:B129884",
+          price: "₹ 4200",
+          rating: 5,
+          image: "./image/Frame 162.png",
+        },
+        {
+          title: "Emerald Necklace",
+          code: "SKU:N985658",
+          price: "₹ 5520",
+          rating: 4,
+          image: "./image/Frame 163.png",
+        },
+        {
+          title: "Sapphire Bracelet",
+          code: "SKU:B129842",
+          price: "₹ 4200",
+          rating: 5,
+          image: "./image/Frame 164.png",
+        },
+      ];
+
+      function createStarRating(rating) {
+        return "★".repeat(rating) + "☆".repeat(5 - rating);
+      }
+
+      function createProductCards(containerId, products) {
+        const grid = document.getElementById(containerId);
+
+        products.forEach((product) => {
+          const card = document.createElement("div");
+          card.className = "product-card";
+
+          card.innerHTML = `
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.title}">
+                        
+                    </div>
+                    <div class="hgfhfh">
+                        <div class="rating" >
+                            <div class="star">${createStarRating(
+                              product.rating
+                            )}</div>
+                            <div class="action-buttons">
+                                <button class="action-btn"><img src="./image/favorite.png" alt="favorite"></button>
+                                <button class="action-btn"><img src="./image/search.png" alt="search"></button>
+                                <button class="action-btn"><img src="./image/compare_arrows.png" alt="compare_arrows"></button>
+                            </div>                        
+                        </div>
+                    <h3 class="product-title">${product.title}</h3>
+                    <div class="product-code">${product.code}</div>
+                    <div class="price-section">
+                        <span class="price">${product.price}</span>
+                        <button class="add-button"><img src="./image/Group 2157.png" alt="Group"></button>
+                    </div>
+                    </div>
+                `;
+
+          grid.appendChild(card);
+        });
+      }
+
+      createProductCards("productGrid", bestAtJBA);
+      createProductCards("newArrivalsGrid", newArrivals);
+      createProductCards("recentViewsGrid", recentViews);
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
