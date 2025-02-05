@@ -1136,6 +1136,7 @@ button:hover {
 
   .support {
     flex-direction: column;
+    display: none;
   }
 
   .nav-container {
